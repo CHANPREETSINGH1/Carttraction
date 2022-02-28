@@ -1,0 +1,28 @@
+.App-link {
+  color: #61dafb;
+}
+.boxClass {
+   /* background-color: yellow;  */
+  margin-left: 300px;
+}
+.buttonClass {
+  font-size: 1000px;
+}
+.footerImage {
+  padding-right: 30px;
+}
+.css-1wgj4yj {
+  margin-bottom: 0 !important;
+}
+.footer a {
+  font-size: 15px !important;
+}
+.footer b {
+  font-size: 15px !important;
+} 
+.first-card {
+  display: flex;
+  padding-left: 10rem;
+  margin-top: 2.5rem;
+}
+

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+ /*custom colors  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#price {
+  width: 368px;
+  margin-top: 40px;
+  margin-left: 16px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 2;
+}
+#price .main {
+  left: auto;
+  top: 0 !important;
+}
+#price .center {
+  background: #fff;
+  border-radius: 2px;
+  min-height: 47px;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 20%);
+}
+#price .details {
+  display: block;
+  text-transform: uppercase;
+  padding: 13px 24px;
+  font-weight: 500;
+  font-size: 18px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #878787;
+  min-height: 47px;
+  border-radius: 2px 2px 0 0;
+}
+.price_main_div {
+  padding: 0 24px !important;
+  font-size: 18px !important;
+  border-bottom: 1px solid #f0f0f0 !important;
+}
+.price_center_div {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 20px 0 !important;
+}
+.center_details {
+  max-width: 68%;
+}
+.items {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+}
+.div_totPrice {
+  line-height: 16px;
+  margin-top: 2px;
+  font-weight: 300;
+}
+.totPrice {
+  display: inline;
+  white-space: pre-wrap;
+}
+.main_charge {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-around;
+  margin: 20px 0;
+  align-items: center;
+}
+.center_charge {
+  max-width: 68%;
+}
+.charge {
+  display: flex;
+  align-items: center;
+}
+.free {
+  text-transform: uppercase;
+  color: #388e3c;
+}
+.main_pay {
+  border-top: 1px dashed #e0e0e0;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.center_pay {
+  display: flex;
+  margin-top: 20px !important;
+  justify-content: space-around;
+  align-items: center;
+}
+.pay {
+  max-width: 68%;
+}
+.payable {
+  display: flex;
+  align-items: center;
+}
+.payment {
+  line-height: 16px;
+  margin-top: 2px;
+}
+.total {
+  display: inline;
+  white-space: pre-wrap;
+}
+@media screen and (max-width: 1240px) {
+  #price {
+    width: 280px !important;
+  }
+}

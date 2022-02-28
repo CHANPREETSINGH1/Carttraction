@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+/*custom colors  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#container {
+  min-height: 1500px;
+  height: 100%;
+}
+.main-div {
+  margin: 0 auto;
+  min-width: 1128px;
+  display: flex;
+  justify-content: center;
+}
+.center-div {
+  display: inline;
+  align-items: flex-start;
+}
+.card-main {
+  display: flex;
+  align-items: flex-start;
+}
+.center-card {
+  margin-bottom: 16px;
+  position: relative;
+  display: inline;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 20%);
+}
+.deliveryAddress {
+  margin-top: 40px;
+}
+.card {
+  padding: 16px 24px;
+  min-height: 72px;
+  max-width: 1000px !important;
+  display: flex;
+  flex-direction: row !important;
+  border: none !important;
+  align-items: flex-start;
+}
+
+.checkOutCard {
+  margin-top: 40px !important;
+  border: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+#container h3 {
+  text-transform: uppercase;
+  color: #878787;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 2px 2px 0 0;
+}
+.number {
+  font-size: 12px;
+  color: #2874f0;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  padding: 3px 7px;
+  vertical-align: baseline;
+  margin-right: 17px;
+}
+.address {
+  display: inline-block;
+  width: 500px;
+}
+.address .delivery {
+  color: #878787;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.address .delivery svg {
+  vertical-align: top;
+  height: 20px;
+  margin-left: 8px;
+}
+.sub-address {
+  font-size: 14px;
+  max-width: 630px;
+}
+.name {
+  color: #212121 !important;
+  font-weight: 500 !important;
+}
+.pinCode {
+  font-weight: 500 !important;
+}
+.cname {
+  color: #212121 !important;
+  font-size: 18px;
+  font-weight: 600 !important;
+}
+.cpinCode {
+  font-size: 18px;
+  font-weight: 600 !important;
+}
+
+#container a,
+button {
+  background: #189cf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  color: #fff !important;
+  transition: 0.2s all;
+  padding: 14px 40px;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 5rem;
+  /* width: 10% !important; */
+  margin-right: 0 !important;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.addressh1 {
+  background-color: #2874f0;
+  padding: 15px 30px !important;
+  color: #fff !important;
+  font-size: 18px !important;
+}
+.addressh3 {
+  background-color: #ffff;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 30px !important;
+  font-size: 18px !important;
+}
+.deliveryAddress .number {
+  background-color: #fff;
+  top: -2%;
+  position: relative;
+}
+.name span {
+  font-size: 20px;
+}
+.pinCode span {
+  font-size: 20px;
+}
+.navlink {
+  margin-top: 30px;
+  margin-left: 550px !important;
+  margin: auto auto;
+  border-radius: 40px !important;
+}
+
+.cardBtn {
+  display: flex;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+}
+.cardBtn .btn1 {
+  margin-right: 30px !important;
+}
+
+.card img {
+  max-width: 45% !important;
+}
+.orderBox {
+  margin: auto auto !important;
+  margin-top: 22% !important;
+}
+#container a:hover {
+  background-color: #fff;
+  border-color: #189cf0;
+  color: #189cf0 !important;
+}
+#container button:hover {
+  background-color: #fff;
+  border-color: #189cf0;
+  color: #189cf0 !important;
+}
+@media only screen and (max-width: 978px) {
+  .center-card {
+    width: 754px;
+  }
+  #container a {
+    width: 30% !important;
+  }
+  #container .navlink {
+    width: 80% !important;
+  }
+}
