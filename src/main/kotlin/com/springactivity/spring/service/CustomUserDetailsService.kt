@@ -11,12 +11,8 @@ import org.springframework.stereotype.Service
 
 @Service
 class CustomUserDetailsService(@Autowired val userRepo: UserRepository) : UserDetailsService {
-//    @Autowired
-//    lateinit var usr: User
-
     @Throws(UsernameNotFoundException::class)
     override fun loadUserByUsername(username: String): UserDetails {
-//        println(username)
         val fUser: com.springactivity.spring.model.User? = userRepo.findByEmail(username)
         if (fUser != null) {
             var username = fUser.email
@@ -25,7 +21,6 @@ class CustomUserDetailsService(@Autowired val userRepo: UserRepository) : UserDe
         }
         var users = userRepo?.findAll();
 
-//        return CustomUserDetails(fUser)
         throw UsernameNotFoundException("Invalid username")
     }
 }
