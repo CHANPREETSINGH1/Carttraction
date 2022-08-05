@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class CarttractionApplication
 
 fun main(args: Array<String>) {
-	runApplication<CarttractionApplication>(*args)
+	runApplication<CarttractionApplication>(*args) 
 }
