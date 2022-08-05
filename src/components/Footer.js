@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import logo1 from "../images/logo4.png";
-
+import { Link } from "react-router-dom";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -36,9 +36,11 @@ export default function Footer() {
             </a>
             <br />
             <br />
+            <Link to="/Cpntact">
             <a style={{ color: "white", textDecoration: "none" }} href="#">
               Contact Us
             </a>
+            </Link>
           </Grid>
           <Grid style={{ color: "grey", textDecoration: "none" }} item xs={2}>
             <b>Help</b>

@@ -66,9 +66,13 @@ const CheckOut = () => {
           </div>
           <Price />
         </div>
-        <NavLink to="orderPlaced" className="navlink">
-          Place Order
-        </NavLink>
+        <center>
+          <div style={{marginRight: "600px", marginTop: "40px"}}>
+            <NavLink to="orderPlaced" className="navlink">
+              <center>Place Order</center>
+            </NavLink>
+          </div>
+        </center>
       </div>
     </>
   );

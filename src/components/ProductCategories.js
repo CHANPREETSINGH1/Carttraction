@@ -25,23 +25,24 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function BasicGrid() {
   return (
+    <>
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item xs={3}>
           <Item>
             <Link to="/electronics">
               <Card sx={{ maxWidth: 345 }}>
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    <strong>Electronics</strong>
+                  </Typography>
+                </CardContent>
                 <CardMedia
                   component="img"
                   height="140"
                   image={electronics}
                   alt="electronics"
                 />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Electronics
-                  </Typography>
-                </CardContent>
               </Card>
             </Link>
           </Item>
@@ -51,17 +52,24 @@ export default function BasicGrid() {
           <Item>
             <Link to="/fashion">
               <Card sx={{ maxWidth: 285, marginBottom: "2px" }}>
+              <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    <strong>Fashion</strong>
+                  </Typography>
+                </CardContent>
                 <CardMedia
                   component="img"
                   height="140"
                   image={clothing}
                   alt="clothing"
+                  marginRight= "0px"
+                  
                 />
-                <CardContent>
+                {/* <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     Fashion
                   </Typography>
-                </CardContent>
+                </CardContent> */}
               </Card>
             </Link>
           </Item>
@@ -70,17 +78,22 @@ export default function BasicGrid() {
           <Item>
             <Link to="/sports">
               <Card sx={{ maxWidth: 345 }}>
+              <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    <strong>Sports</strong>
+                  </Typography>
+                </CardContent>
                 <CardMedia
                   component="img"
                   height="140"
                   image={sports}
                   alt="sports"
                 />
-                <CardContent>
+                {/* <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     Sports
                   </Typography>
-                </CardContent>
+                </CardContent> */}
               </Card>
             </Link>
           </Item>
@@ -89,22 +102,28 @@ export default function BasicGrid() {
           <Item>
             <Link to="/grocery">
               <Card sx={{ maxWidth: 420 }}>
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    <strong>Groceries</strong>
+                  </Typography>
+                </CardContent>
                 <CardMedia
                   component="img"
                   height="140"
                   image={groceries}
                   alt="groceries"
                 />
-                <CardContent>
+                {/* <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     Groceries
                   </Typography>
-                </CardContent>
+                </CardContent> */}
               </Card>
             </Link>
           </Item>
         </Grid>
       </Grid>
     </Box>
+    </>
   );
 }
